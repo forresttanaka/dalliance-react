@@ -1,2 +1,5 @@
 node_modules/
 build/
+.sass-cache/
+stylesheets/
+.DS_Store
