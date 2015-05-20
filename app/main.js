@@ -51,7 +51,9 @@ var TrackHub = React.createClass({
 
     render: function() {
         return (
-            <div id="svgHolder"></div>
+            <div>
+                <div id="svgHolder"></div>
+            </div>
         );
     }
 });

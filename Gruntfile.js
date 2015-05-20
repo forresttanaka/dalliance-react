@@ -25,14 +25,45 @@ module.exports = function(grunt) {
             },
         },
 
+        serve: {
+            options: {
+                port: 9000
+            }
+        },
+
+        watch: {
+            js: {
+                files: [
+                    'app/**/*.js'
+                ],
+                tasks: ['browserify']
+            },
+            livereload: {
+                // Browser live reloading
+                // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
+                options: {
+                    livereload: true
+                },
+                files: [
+                    'build/bundle.js',
+                    '*.html'
+                ]
+            }
+        }
+
     });
  
     // Load plug-ins
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-react');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-serve');
 
     // define tasks
     grunt.registerTask('default', [
         'browserify'
+    ]);
+    grunt.registerTask('dev', [
+        'watch'
     ]);
 };
