@@ -17,6 +17,8 @@ var TrackHub = React.createClass({
                 ucscName: 'hg18'
             },
 
+            noTitle: true,
+
             sources: [
                 {
                     name:                 'Genome',      
