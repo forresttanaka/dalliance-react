@@ -10,6 +10,10 @@ Build
 
 This demo needs [Browserify](http://browserify.org) to build the final Javascript file that’s used in the demo page, index.html. It uses the [Grunt](http://gruntjs.com) Javascript task runner to automate this.
 
+Before building, you need to install all the build and runtime dependencies:
+
+    npm install
+
 To do a basic build:
 
     grunt
