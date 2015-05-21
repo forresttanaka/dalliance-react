@@ -3,7 +3,9 @@ dalliance-react: dalliance in a React component
 
 Please visit the [BioDalliance](http://www.biodalliance.org/) home page for details of the project.
 
-This project is a demo showing a very basic use of of a BioDalliance instance in a [React](http://reactjs.com/) component.
+This project is a demo showing a very basic use of a BioDalliance instance in a [React](http://reactjs.com/) component.
+
+BioDalliance isn’t designed to be used in a CommonJS environment, so rather than installing the original BioDalliance package, this demo uses a [fork of BioDalliance](https://github.com/ENCODE-DCC/dalliance) in the [ENCODE-DCC](https://github.com/ENCODE-DCC) organization. This fork adds the entry point so that BioDalliance can be required like any other CommonJS component.
 
 Build
 -----------
